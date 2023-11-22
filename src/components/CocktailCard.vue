@@ -22,15 +22,16 @@ export default {
 <template>
     <div class="col-3">
         <div class="card">
-            <img class="card-img-top img-fluid" src="https://picsum.photos/id/237/200/300" alt="Title">
+            <img class="card-img-top img-fluid object-fit-cover" src="https://picsum.photos/id/237/200/300" alt="Title"
+                style="height: 300px;">
             <div class="card-body">
-                <h4 class="card-title">Cocktail Name</h4>
-                <p>Category</p>
-                <p>Tags (ARRAY)</p>
-                <p>Glass Type</p>
-                <p>Ingredients (OBJECTS ARRAY)</p>
-                <p>Alcholic (BOOLEAN)</p>
-                <p>Recipe</p>
+                <h4 class="card-title"><strong>Cocktail Name</strong></h4>
+                <p><strong>Category: </strong>(STRING)</p>
+                <p><strong>Tags: </strong>(ARRAY)</p>
+                <p><strong>Glass Type: </strong>(STRING)</p>
+                <p><strong>Ingredients: </strong> (OBJECTS ARRAY)</p>
+                <p><strong>Alcholic: </strong>(BOOLEAN)</p>
+                <p><strong>Recipe: </strong>(STRING)</p>
             </div>
         </div>
     </div>
