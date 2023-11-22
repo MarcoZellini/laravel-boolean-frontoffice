@@ -44,4 +44,10 @@ export default {
     </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@use '../assets/scss/partials/variables.scss' as *;
+
+#home {
+    background-color: $appBg;
+}
+</style>

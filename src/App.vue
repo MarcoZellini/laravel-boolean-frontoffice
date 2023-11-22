@@ -2,11 +2,15 @@
 
 import { store } from './store.js'
 
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
+
 export default {
     name: 'App',
 
     components: {
-        // MAYBE YOU WILL NEED A NAVBAR COMPONENT?
+        Navbar,
+        Footer
     },
 
     data() {
@@ -31,28 +35,21 @@ export default {
     <header>
 
         <!-- NAVBAR -->
-        <nav class="nav justify-content-center shadow">
-
-            <router-link class="nav-link" to="/">Home</router-link>
-
-            <router-link class="nav-link" to="/chi-siamo">Chi Siamo</router-link>
-
-            <router-link class="nav-link" to="/contatti">Contatti</router-link>
-
-        </nav>
+        <Navbar />
 
     </header>
 
     <main>
+
         <!-- VIEWS -->
         <router-view></router-view>
+
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <h3>FOOTER</h3>
-
-    </footer>
+    <Footer />
 </template>
 
-<style scoped></style>
+<style lang="scss">
+
+</style>

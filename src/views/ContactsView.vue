@@ -25,7 +25,7 @@ export default {
 <template>
     <section id="contacts" class="">
 
-        <section id="contacts" class="vh-100 pt-5">
+        <section id="contacts" class="pt-5">
             <div class="container h-100 d-flex flex-column">
 
                 <div class="row justify-content-center">
