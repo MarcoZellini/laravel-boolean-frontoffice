@@ -2,8 +2,14 @@
 
 import { store } from '../store';
 
+import CocktailCard from "../components/CocktailCard.vue";
+
 export default {
     name: 'HomeView',
+
+    components: {
+        CocktailCard
+    },
 
     data() {
         return {
@@ -26,8 +32,15 @@ export default {
 
 <template>
     <section id="home" class="">
-        <h1>HOME</h1>
-        <h2><i class="fa-solid fa-martini-glass-citrus"></i> COCKTAILS</h2>
+        <div class="container">
+            <h1>HOME</h1>
+            <h2><i class="fa-solid fa-martini-glass-citrus"></i> COCKTAILS</h2>
+            <div class="row d-flex justify-content-center">
+                <CocktailCard />
+            </div>
+        </div>
+
+
     </section>
 </template>
 
