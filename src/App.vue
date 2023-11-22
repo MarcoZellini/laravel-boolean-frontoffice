@@ -31,7 +31,7 @@ export default {
     <header>
 
         <!-- NAVBAR -->
-        <nav class="nav justify-content-center  ">
+        <nav class="nav justify-content-center shadow">
 
             <router-link class="nav-link" to="/">Home</router-link>
 
@@ -44,7 +44,6 @@ export default {
     </header>
 
     <main>
-
         <!-- VIEWS -->
         <router-view></router-view>
     </main>

@@ -33,9 +33,9 @@ export default {
 <template>
     <section id="home" class="">
         <div class="container">
-            <h1>HOME</h1>
-            <h2><i class="fa-solid fa-martini-glass-citrus"></i> COCKTAILS</h2>
-            <div class="row d-flex justify-content-center">
+            <h1 class="text-center">HOME</h1>
+            <h2 class="text-center"><i class="fa-solid fa-martini-glass-citrus"></i> COCKTAILS</h2>
+            <div class="row d-flex justify-content-center py-3">
                 <CocktailCard />
             </div>
         </div>

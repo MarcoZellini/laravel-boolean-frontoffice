@@ -1,1 +1,12 @@
-@use '../../../node_modules/bootstrap/scss/bootstrap.scss'
+@use '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+a,
+router-link {
+    color: black !important;
+    text-decoration: none !important;
+
+    a:hover
+    {
+        color: black !important;
+    }
+}
