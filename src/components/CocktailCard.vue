@@ -21,7 +21,7 @@ export default {
 
 <template>
     <div class="col-3">
-        <div class="card">
+        <div class="card shadow">
             <img class="card-img-top img-fluid object-fit-cover" src="https://picsum.photos/id/237/200/300" alt="Title"
                 style="height: 300px;">
             <div class="card-body">
