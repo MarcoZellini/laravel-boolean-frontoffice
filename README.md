@@ -1,7 +1,14 @@
-# Vue 3 + Vite
+# Cocktails
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Front end:
+    - Nome repository: laravel-boolean-frontoffice
+    ⁃ L’app deve esporre tre rotte client:
+    ⁃ “/” la pagina principale, che mostra la lista di Cocktails.
+    ⁃ “/chi-siamo” una pagina con la descrizione dell’attività del Cocktail Bar.
+    ⁃ “/contatti” una pagina con un form di contatto.
 
-## Recommended IDE Setup
+### BONUS:
+Aggiungere nella /index un filtro che permetta di filtrare i Cocktails per tipologia.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### BONUS:
+Implementare il form di contatti in modo che sia possibile inviare effettivamente un’email.
