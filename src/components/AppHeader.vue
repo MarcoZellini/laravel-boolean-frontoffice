@@ -54,7 +54,7 @@ export default {
                 class="nav-link text-white"
                 aria-current="page"
               >
-                About
+                Chi Siamo
               </RouterLink>
               <!-- <a class="nav-link text-white" href="#">About</a> -->
             </li>
@@ -64,7 +64,7 @@ export default {
                 class="nav-link text-white"
                 aria-current="page"
               >
-                Contact
+                Contatti
               </RouterLink>
               <!-- <a class="nav-link text-white" href="#">Contact</a> -->
             </li>
