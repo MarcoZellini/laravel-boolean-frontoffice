@@ -3,10 +3,14 @@ import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
 
+import { store } from './store.js'
+
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      store
+      };
   },
   components: {
     AppHeader,
@@ -18,8 +22,12 @@ export default {
 
 <template>
   <AppHeader></AppHeader>
-  <AppJumbotron></AppJumbotron>
-  <main style="height: 200px;"></main>
+  
+  <main style="height: 200px;">
+    <AppJumbotron></AppJumbotron>
+    <!-- VIEWS -->
+    <router-view></router-view>
+  </main>
   <AppFooter></AppFooter>
 </template>
 
