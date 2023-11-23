@@ -4,34 +4,46 @@ export default {
     name: 'CocktailCard',
 
     props: {
-        // THIS WLL NEED THE PROPS TO RENDER THE COMPONENT FROM API DATA
+        cocktail: Object,
+        url: String,
     },
-
-    mounted() {
-
-    },
-
-    methods: {
-
-    }
 
 }
 
 </script>
 
 <template>
-    <div class="col-3">
-        <div class="card shadow">
-            <img class="card-img-top img-fluid object-fit-cover" src="https://picsum.photos/id/237/200/300" alt="Title"
-                style="height: 300px;">
+    <div class="col">
+        <div class="card h-100 shadow">
+            <img class="card-img-top img-fluid object-fit-cover" :src="cocktail.thumb" :alt="cocktail.name">
+
             <div class="card-body">
-                <h4 class="card-title"><strong>Cocktail Name</strong></h4>
-                <p><strong>Category: </strong>(STRING)</p>
-                <p><strong>Tags: </strong>(ARRAY)</p>
-                <p><strong>Glass Type: </strong>(STRING)</p>
-                <p><strong>Ingredients: </strong> (OBJECTS ARRAY)</p>
-                <p><strong>Alcholic: </strong>(BOOLEAN)</p>
-                <p><strong>Recipe: </strong>(STRING)</p>
+
+                <h4 class="card-title"><strong>{{ cocktail.name }}</strong></h4>
+
+                <p><strong>Category: </strong> {{ cocktail.category }}</p>
+
+                <p v-if="cocktail.tags"><strong>Tags: </strong><span v-for="tag in cocktail.tags"> <span
+                            class="badge bg-primary mx-1">{{ tag }}</span> </span></p>
+
+                <p v-if="cocktail.glass_type"><strong>Glass Type: </strong><span v-for="glass in cocktail.glass_type">
+                        {{ glass }}</span></p>
+
+                <p class><strong>Ingredients: </strong>
+
+                <ul class="list-unstyled">
+                    <li v-for="ingredient in cocktail.ingredients">
+                        {{ ingredient.name }}: {{ ingredient.measure }}
+                    </li>
+                </ul>
+
+                </p>
+
+                <p><strong>{{ cocktail.is_alcoholic ? 'Alcolico' : 'Analcolico' }}</strong></p>
+
+                <p class="mb-0"><strong>Recipe: </strong></p>
+                <span>{{ cocktail.instructions }}</span>
+
             </div>
         </div>
     </div>
