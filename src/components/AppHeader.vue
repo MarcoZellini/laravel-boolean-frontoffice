@@ -24,6 +24,8 @@ export default {
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-bs-toggle="collapse"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
