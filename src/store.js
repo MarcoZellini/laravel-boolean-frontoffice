@@ -21,7 +21,7 @@ export const store = reactive({
                 this.pageLinks = response.data.result.links;
                 console.log('Pagination links', this.pageLinks);
 
-                this.currentPage = response.data.result.currentPage;
+                this.currentPage = response.data.result.current_page;
                 console.log('Current page', this.currentPage);
 
             })
@@ -44,7 +44,7 @@ export const store = reactive({
                 this.pageLinks = response.data.result.links;
                 console.log('Pagination links', this.pageLinks);
 
-                this.currentPage = response.data.result.currentPage;
+                this.currentPage = response.data.result.current_page;
 
                 console.log('Current page', this.currentPage);
 
