@@ -1,55 +1,34 @@
 <script>
+import AppFooter from "./components/AppFooter.vue";
+import AppHeader from "./components/AppHeader.vue";
+import AppJumbotron from "./components/AppJumbotron.vue";
 
 import { store } from './store.js'
 
-import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue';
-
 export default {
-    name: 'App',
-
-    components: {
-        Navbar,
-        Footer
-    },
-
-    data() {
-        return {
-            store
-        }
-
-    },
-
-    mounted() {
-
-    },
-
-    methods: {
-
-    }
-
-}
+  name: "App",
+  data() {
+    return {
+      store
+      };
+  },
+  components: {
+    AppHeader,
+    AppFooter,
+    AppJumbotron,
+  },
+};
 </script>
 
 <template>
-    <header>
-
-        <!-- NAVBAR -->
-        <Navbar />
-
-    </header>
-
-    <main>
-
-        <!-- VIEWS -->
-        <router-view></router-view>
-
-    </main>
-
-    <!-- FOOTER -->
-    <Footer />
+  <AppHeader></AppHeader>
+  
+  <main style="height: 200px;">
+    <AppJumbotron></AppJumbotron>
+    <!-- VIEWS -->
+    <router-view></router-view>
+  </main>
+  <AppFooter></AppFooter>
 </template>
 
-<style lang="scss">
-
-</style>
+<style></style>

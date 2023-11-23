@@ -1,12 +1,27 @@
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-a,
-router-link {
-    color: black !important;
-    text-decoration: none !important;
-
-    a:hover
-    {
-        color: black !important;
-    }
+header,
+.jumbotron {
+  background: linear-gradient(to left, #3a6073, #16222a);
+  color: white;
+}
+.jumbotron img {
+  width: 200px;
+  background: white;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.jumbotron img:hover {
+  box-shadow: -3px -1px 20px 12px rgb(198 193 9 / 50%);
+  transform: scale(1.1);
+}
+footer {
+  padding: 20px;
+  background-color: #17232b;
+  li {
+    color: white;
+  }
+}
+a:hover {
+  border-bottom: 2px solid rgb(198 193 9 / 50%);
 }
