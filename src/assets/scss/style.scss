@@ -5,6 +5,10 @@ header,
   background: linear-gradient(to left, #3a6073, #16222a);
   color: white;
 }
+#home {
+  background: linear-gradient(to left, #3a6073, #16222a);
+  color: white;
+}
 .jumbotron img {
   width: 200px;
   background: white;
@@ -33,4 +37,23 @@ footer li:hover {
 }
 .color_hover {
   color: white;
+}
+.bg_badge {
+  background-color: rgb(198 193 9 / 50%);
+}
+.recipe-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(22, 34, 42, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
 }
