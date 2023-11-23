@@ -19,12 +19,8 @@ export default {
     },
 
     mounted() {
-        // GET COCKTAILS LIST
+        store.getCocktails()
     },
-
-    methods: {
-
-    }
 
 }
 
@@ -35,8 +31,11 @@ export default {
         <div class="container">
             <h1 class="text-center">HOME</h1>
             <h2 class="text-center"><i class="fa-solid fa-martini-glass-citrus"></i> COCKTAILS</h2>
-            <div class="row d-flex justify-content-center py-3">
-                <CocktailCard />
+
+            <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center py-3 g-3">
+
+                <CocktailCard :cocktail="cocktail" v-for="cocktail in store.cocktails" />
+
             </div>
         </div>
 
