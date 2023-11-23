@@ -11,7 +11,7 @@ export default {
         <div class="col-6">
           <h2>Chi siamo?</h2>
           <p class="fs-4 mt-5">
-            "It's Cocktail è un luogo d’incontro, uno spazio di condivisione in
+            "It'Cocktail è un luogo d’incontro, uno spazio di condivisione in
             cui cucina, musica e ospitalità si fondono in un intreccio
             inestricabile. Dall’aperitivo al cocktail after dinner, dalla
             selezione di vinili in vendita alla musica live serale, dalla cena
@@ -62,6 +62,10 @@ export default {
 <style lang="scss" scoped>
 img {
   width: 60vh;
+}
+
+img:hover {
+  transform: translateY(0) scale(1.1);
 }
 
 button:hover {
