@@ -5,7 +5,6 @@ export default {
 
     props: {
         cocktail: Object,
-        url: String,
     },
 
 }
