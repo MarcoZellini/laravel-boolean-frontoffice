@@ -17,7 +17,7 @@ export default {
             <font-awesome-icon
               icon="fa-solid fa-location-dot"
               size="lg"
-              style="color: #ffffff;"
+              class="color_hover"
             />
             <span class="ps-3">Via Roma 5</span>
           </li>
@@ -25,7 +25,7 @@ export default {
             <font-awesome-icon
               icon="fa-brands fa-whatsapp"
               size="lg"
-              style="color: #ffffff;"
+              class="color_hover"
             />
             <span class="ps-3">+39 355 886 4545</span>
           </li>
@@ -33,7 +33,7 @@ export default {
             <font-awesome-icon
               icon="fa-solid fa-envelope"
               size="lg"
-              style="color: #ffffff;"
+              class="color_hover"
             />
             <span class="ps-3"> CocktailBar@gmail.com</span>
           </li>
@@ -43,28 +43,28 @@ export default {
             <font-awesome-icon
               icon="fa-brands fa-instagram"
               size="xl"
-              style="color: #ffffff;"
+              class="color_hover"
             />
           </li>
           <li>
             <font-awesome-icon
               icon="fa-brands fa-facebook"
               size="xl"
-              style="color: #ffffff;"
+              class="color_hover"
             />
           </li>
           <li>
             <font-awesome-icon
               icon="fa-brands fa-pinterest"
               size="xl"
-              style="color: #ffffff;"
+              class="color_hover"
             />
           </li>
           <li>
             <font-awesome-icon
               icon="fa-brands fa-x-twitter"
               size="lg"
-              style="color: #ffffff;"
+              class="color_hover"
             />
           </li>
         </ul>
