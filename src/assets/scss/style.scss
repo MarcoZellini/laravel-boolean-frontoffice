@@ -1,10 +1,15 @@
-@use '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@use "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 header,
 .jumbotron {
   background: linear-gradient(to left, #3a6073, #16222a);
   color: white;
 }
+
+.bg-color-dark {
+  background: linear-gradient(to left, #3a6073, #16222a);
+}
+
 #home {
   background: linear-gradient(to left, #3a6073, #16222a);
   color: white;
