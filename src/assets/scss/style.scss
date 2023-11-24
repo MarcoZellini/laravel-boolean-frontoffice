@@ -7,6 +7,10 @@ header,
   color: $appBg-light;
 }
 
+.bg-color-dark {
+  background: linear-gradient(to left, #3a6073, #16222a);
+}
+
 #home {
   background: linear-gradient(to left, $appBg-secondary, $appBg-primary);
   color: $appBg-light;
