@@ -35,7 +35,7 @@ export default {
 
             <!-- PAGINATION -->
             <!-- PUOI AGGIUNGERE v-if="store.currentPage > 1" PER FARLA SPARIRE QUANDO NON CI SONO ABBSTANZA PAGINE -->
-            <nav aria-label="Page navigation" class="my-3">
+            <nav aria-label="Page navigation" class="my-3 d-inline-block">
 
                 <ul class="pagination">
 
@@ -49,6 +49,48 @@ export default {
                 </ul>
 
             </nav>
+
+            <!-- CATEGORY  DROPDOWN FILTER -->
+            <div class="dropdown open d-inline-block ms-4">
+                <button class="btn btn-primary dropdown-toggle border border-black shadow" type="button" id="categoryfilter"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filtra per Categoria
+                </button>
+                <ul class="dropdown-menu border border-black shadow">
+
+                    POPOLARE LISTA ROTTE
+                    <!-- <router-link class="dropdown-item" v-for="category in this.store.categorys" :to="{
+                        name: 'category',
+                        params: { slug: category.slug }
+                    }">
+                        {{ category.name }}
+                    </router-link> -->
+
+                    VUOTO
+
+                </ul>
+            </div>
+
+            <!-- CATEGORY  DROPDOWN FILTER -->
+            <div class="dropdown open d-inline-block ms-4">
+                <button class="btn btn-primary dropdown-toggle border border-black shadow" type="button" id="categoryfilter"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filtra per Tag
+                </button>
+                <ul class="dropdown-menu border border-black shadow">
+
+                    POPOLARE LISTA ROTTE
+                    <!-- <router-link class="dropdown-item" v-for="category in this.store.categorys" :to="{
+                        name: 'category',
+                        params: { slug: category.slug }
+                    }">
+                        {{ category.name }}
+                    </router-link> -->
+
+                    VUOTO
+
+                </ul>
+            </div>
 
             <div class="row row-cols-1 row-cols-md-3 d-flex justify-content-center py-3 g-3">
 
