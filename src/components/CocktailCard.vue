@@ -1,26 +1,27 @@
 <script>
 export default {
-    name: "CocktailCard",
-    data() {
-        return {
-            idHoveredDiv: true,
-        };
+  name: "CocktailCard",
+  data() {
+    return {
+      idHoveredDiv: true,
+    };
+  },
+  props: {
+    cocktail: Object,
+  },
+  methods: {
+    hideImage() {
+      this.idHoveredDiv = false;
     },
-    props: {
-        cocktail: Object,
+    showImage() {
+      this.idHoveredDiv = true;
     },
-    methods: {
-        hideImage() {
-            this.idHoveredDiv = false;
-        },
-        showImage() {
-            this.idHoveredDiv = true;
-        },
-    },
+  },
 };
 </script>
 
 <template>
+
     <div class="col">
         <div class="card p-0 position-relative h-100 border-black shadow" @mouseover="hideImage" @mouseleave="showImage">
 
@@ -79,8 +80,8 @@ export default {
             </div>
 
         </div>
-
     </div>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>

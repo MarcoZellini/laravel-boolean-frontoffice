@@ -1,12 +1,12 @@
-<script >
-
-import { store } from '../store';
+<script>
+import { store } from "../store";
 
 import { Dropdown } from 'bootstrap';
 
 import CocktailCard from "../components/CocktailCard.vue";
 
 export default {
+
     name: 'HomeView',
 
     components: {
@@ -82,6 +82,5 @@ export default {
     </section>
 </template>
 
-<style lang="scss">
-@use '../assets/scss/partials/variables.scss' as *;
-</style>
+<style lang="scss"></style>
+

@@ -5,10 +5,10 @@ export default {
 </script>
 
 <template>
-  <section id="about" class="">
-    <div class="container my-4 py-5 d-flex justify-content-evely text-center">
-      <div class="row gap-5">
-        <div class="col-6">
+  <section id="about" class="bg-color-dark text-light">
+    <div class="container py-5 about px-4">
+      <div class="row gap-5 justify-content-between">
+        <div class="col-12 col-md-4">
           <h2>Chi siamo?</h2>
           <p class="fs-4 mt-5">
             "It'Cocktail è un luogo d’incontro, uno spazio di condivisione in
@@ -19,9 +19,9 @@ export default {
             Sperimentale, Moebius è in costante divenire."
           </p>
         </div>
-        <div class="col-4 align-self-end">
+        <div class="col-12 col-md-6 align-self-center">
           <img
-            class="rounded-start-pill"
+            class="rounded-circle shadow"
             src="../assets/img/different-cocktails.webp"
             alt="different-cocktails"
             srcset=""
@@ -30,15 +30,15 @@ export default {
 
         <hr />
 
-        <div class="col-6 align-self-end">
+        <div class="col-12 col-md-6 align-self-center">
           <img
-            class="rounded-end-pill border-1 shadow"
-            src="../assets/img/LesserKnownCocktails_HERO_062223_55394.webp"
+            class="rounded-circle shadow"
+            src="../assets/img/LesserKnownCocktails_HERO_062223.webp"
             alt="different-cocktails"
             srcset=""
           />
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <h2>Cosa proproniamo?</h2>
           <p class="fs-4 mt-5">
             "It's Cocktail propone una vastissima quantita' di cocktails e
@@ -48,11 +48,35 @@ export default {
 
         <hr />
 
+        <div class="row mb-2">
+          <div class="col-12 col-md-3 collage mb-3">
+            <img src="../assets/img/cocktail-party_web.webp" alt="" srcset="" />
+          </div>
+          <div class="col-12 col-md-3 collage mb-3">
+            <img
+              src="../assets/img/Bacardi-s-top-5-cocktail-trends-for-2022.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-12 col-md-3 collage mb-3">
+            <img
+              src="../assets/img/classic-drinks-to-learn-at-onlin.webp"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-12 col-md-3 collage mb-3">
+            <img
+              src="../assets/img/iStock-508704770 (1).jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+
         <button class="rounded btn w-25 py-2 m-auto btn-dark">
-          Scopri di piu'!
-          <!-- <router-link class="nav-link light" to="/projects"
-          >Scopri di piu'!</router-link
-        > -->
+          <a href="https://www.instagram.com"> Scopri di piu'!</a>
         </button>
       </div>
     </div>
@@ -61,10 +85,15 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 60vh;
+  width: 100%;
+  object-fit: cover;
 }
 
-img:hover {
+a {
+  color: white !important;
+  text-decoration: none;
+}
+.collage:hover {
   transform: translateY(0) scale(1.1);
 }
 
@@ -73,7 +102,7 @@ button:hover {
 }
 
 hr {
-  color: rgb(24, 24, 24);
-  font-weight: 700;
+  color: rgb(255, 255, 255);
+  height: 2px;
 }
 </style>
