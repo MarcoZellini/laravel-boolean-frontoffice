@@ -1,27 +1,26 @@
 <script>
 export default {
-  name: "CocktailCard",
-  data() {
-    return {
-      idHoveredDiv: true,
-    };
-  },
-  props: {
-    cocktail: Object,
-  },
-  methods: {
-    hideImage() {
-      this.idHoveredDiv = false;
+    name: "CocktailCard",
+    data() {
+        return {
+            idHoveredDiv: true,
+        };
     },
-    showImage() {
-      this.idHoveredDiv = true;
+    props: {
+        cocktail: Object,
     },
-  },
+    methods: {
+        hideImage() {
+            this.idHoveredDiv = false;
+        },
+        showImage() {
+            this.idHoveredDiv = true;
+        },
+    },
 };
 </script>
 
 <template>
-
     <div class="col">
         <div class="card p-0 position-relative h-100 border-black shadow" @mouseover="hideImage" @mouseleave="showImage">
 
@@ -31,7 +30,7 @@ export default {
 
                 <h4 class="card-title fw-bold">{{ cocktail.name }}</h4>
 
-                <p class="fw-bold">Category: {{ cocktail.category }}</p>
+                <p v-if="cocktail.category" class="fw-bold">Category: {{ cocktail.category.name }}</p>
 
                 <div>
 
@@ -65,7 +64,7 @@ export default {
 
                             <ul class="list-unstyled">
                                 <li v-for="ingredient in cocktail.ingredients">
-                                    {{ ingredient.ingredient }}: {{ ingredient.measure }}
+                                    {{ ingredient.name }}: {{ ingredient.measure }}
                                 </li>
                             </ul>
 
@@ -81,7 +80,6 @@ export default {
 
         </div>
     </div>
-  </div>
 </template>
 
 <style lang="scss" scoped></style>
