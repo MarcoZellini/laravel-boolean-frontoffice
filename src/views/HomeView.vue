@@ -42,7 +42,7 @@ export default {
                     <li class="page-item" v-for="link in store.pageLinks" :class="(link.label == store.currentPage ? 'active' : ''),
                         (link.url == null ? 'disabled' : '')" :key="link.id" aria-current="page">
 
-                        <a class="page-link" href="#home" @click="store.navigate(link.url)" v-html="link.label"></a>
+                        <a class="page-link" href="#" @click="store.navigate(link.url)" v-html="link.label"></a>
 
                     </li>
 
