@@ -1,45 +1,47 @@
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@use "./partials/variables.scss" as *;
 
 header,
 .jumbotron {
-  background: linear-gradient(to left, #3a6073, #16222a);
-  color: white;
+  background: linear-gradient(to left, $appBg-secondary, $appBg-primary);
+  color: $appBg-light;
 }
+
 #home {
-  background: linear-gradient(to left, #3a6073, #16222a);
-  color: white;
+  background: linear-gradient(to left, $appBg-secondary, $appBg-primary);
+  color: $appBg-light;
 }
 .jumbotron img {
   width: 200px;
-  background: white;
+  background: $appBg-light;
   border-radius: 50%;
   margin-bottom: 40px;
 }
 .jumbotron img:hover {
-  box-shadow: -3px -1px 20px 12px rgb(198 193 9 / 50%);
+  box-shadow: -3px -1px 20px 12px $appBg-card-elements;
   transform: scale(1.1);
 }
 footer {
   padding: 20px;
-  background-color: #17232b;
+  background-color: $appBg-primary;
   li {
-    color: white;
+    color: $appBg-light;
   }
 }
 a:hover {
-  border-bottom: 2px solid rgb(198 193 9 / 50%);
+  border-bottom: 2px solid $appBg-card-elements;
 }
 footer li:hover {
-  color: rgb(198 193 9 / 50%);
+  color: $appBg-card-elements;
 }
 .color_hover:hover {
-  color: rgb(198 193 9 / 50%);
+  color: $appBg-card-elements;
 }
 .color_hover {
-  color: white;
+  color: $appBg-light;
 }
 .bg_badge {
-  background-color: rgb(198 193 9 / 50%);
+  background-color: $appBg-card-elements;
 }
 .recipe-overlay {
   position: absolute;
@@ -47,8 +49,8 @@ footer li:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(22, 34, 42, 0.9);
-  color: white;
+  background: $appBg-overlay;
+  color: $appBg-light;
   display: flex;
   flex-direction: column;
   align-items: center;
