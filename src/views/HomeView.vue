@@ -1,29 +1,25 @@
-<script >
-
-import { store } from '../store';
+<script>
+import { store } from "../store";
 
 import CocktailCard from "../components/CocktailCard.vue";
 
 export default {
-    name: 'HomeView',
+  name: "HomeView",
 
-    components: {
-        CocktailCard
-    },
+  components: {
+    CocktailCard,
+  },
 
-    data() {
-        return {
-            store,
-        }
+  data() {
+    return {
+      store,
+    };
+  },
 
-    },
-
-    mounted() {
-        store.getCocktails()
-    },
-
-}
-
+  mounted() {
+    store.getCocktails();
+  },
+};
 </script>
 
 <template>
@@ -104,10 +100,4 @@ export default {
     </section>
 </template>
 
-<style lang="scss">
-@use '../assets/scss/partials/variables.scss' as *;
-
-#home {
-    background-color: $appBg;
-}
-</style>
+<style lang="scss"></style>
