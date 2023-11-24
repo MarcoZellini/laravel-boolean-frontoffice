@@ -1,25 +1,32 @@
 <script>
 import { store } from "../store";
 
+import { Dropdown } from 'bootstrap';
+
 import CocktailCard from "../components/CocktailCard.vue";
 
 export default {
-  name: "HomeView",
 
-  components: {
-    CocktailCard,
-  },
+    name: 'HomeView',
 
-  data() {
-    return {
-      store,
-    };
-  },
+    components: {
+        CocktailCard
+    },
 
-  mounted() {
-    store.getCocktails();
-  },
-};
+    data() {
+        return {
+            store,
+        }
+
+    },
+
+    mounted() {
+        store.getCocktails();
+        store.getCategories();
+    },
+
+}
+
 </script>
 
 <template>
@@ -54,36 +61,12 @@ export default {
                 </button>
                 <ul class="dropdown-menu border border-black shadow">
 
-                    POPOLARE LISTA ROTTE
-                    <!-- <router-link class="dropdown-item" v-for="category in this.store.categorys" :to="{
+                    <router-link class="dropdown-item" v-for="category in store.categories" :to="{
                         name: 'category',
                         params: { slug: category.slug }
                     }">
                         {{ category.name }}
-                    </router-link> -->
-
-                    VUOTO
-
-                </ul>
-            </div>
-
-            <!-- CATEGORY  DROPDOWN FILTER -->
-            <div class="dropdown open d-inline-block ms-4">
-                <button class="btn btn-primary dropdown-toggle border border-black shadow" type="button" id="categoryfilter"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Filtra per Tag
-                </button>
-                <ul class="dropdown-menu border border-black shadow">
-
-                    POPOLARE LISTA ROTTE
-                    <!-- <router-link class="dropdown-item" v-for="category in this.store.categorys" :to="{
-                        name: 'category',
-                        params: { slug: category.slug }
-                    }">
-                        {{ category.name }}
-                    </router-link> -->
-
-                    VUOTO
+                    </router-link>
 
                 </ul>
             </div>
@@ -96,8 +79,8 @@ export default {
             </div>
         </div>
 
-
     </section>
 </template>
 
 <style lang="scss"></style>
+

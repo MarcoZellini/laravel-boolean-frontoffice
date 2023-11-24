@@ -3,11 +3,12 @@ import { reactive } from "vue";
 import axios from "axios";
 
 export const store = reactive({
-  cocktailsUrl: "http://127.0.0.1:8000/api/cocktails",
-  cocktails: null,
-  pageLinks: null,
-  currentPage: null,
-  
+    cocktailsUrl: "http://127.0.0.1:8000/api/cocktails",
+    cocktails: null,
+    pageLinks: null,
+    currentPage: null,
+    categories: null,
+
     getCocktails() {
 
         axios.get(this.cocktailsUrl)
@@ -53,5 +54,20 @@ export const store = reactive({
             })
 
     },
+
+    getCategories() {
+        axios.get('http://127.0.0.1:8000/api/categories').then(response => {
+
+
+            console.log(response);
+
+            this.categories = response.data.categories
+
+            console.log('Categorie', this.categories);
+
+        }).catch(err => {
+            console.error(err);
+        })
+    }
 
 })
